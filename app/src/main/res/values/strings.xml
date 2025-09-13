@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">Socially</string>
-    <string name="camera_cd" />
-    <string name="igdirect_cd" />
-    <string name="igtv_cd" />
+    <string name="camera_cd">Camera</string>
+    <string name="igdirect_cd">Direct messages</string>
+    <string name="igtv_cd">IGTV</string>
+    <string name="Home">Home</string>
+    <string name="Explore">Explore</string>
+    <string name="Create">Create</string>
+    <string name="Notifications">Notifications</string>
+    <string name="Profile">Profile</string>
 </resources>
