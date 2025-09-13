@@ -1,13 +1,319 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <!--sample page-->
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/search_container"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Explore Fragment"
-        android:layout_centerInParent="true"/>
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Search Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_corners"
+                android:padding="12dp"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="8dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/search"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Search"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/frame"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:weightSum="5">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:text="Shop"
+                android:textColor="@color/orange_app"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:padding="8dp"
+                android:layout_marginEnd="4dp"
+                android:minHeight="0dp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:text="Style"
+                android:textColor="@color/orange_app"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:padding="8dp"
+                android:layout_marginEnd="4dp"
+                android:minHeight="0dp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:text="Sports"
+                android:textColor="@color/orange_app"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:padding="8dp"
+                android:layout_marginEnd="4dp"
+                android:minHeight="0dp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:text="Auto"
+                android:textColor="@color/orange_app"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:padding="8dp"
+                android:layout_marginEnd="4dp"
+                android:minHeight="0dp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:text="Music"
+                android:textColor="@color/orange_app"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:padding="8dp"
+                android:minHeight="0dp"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Image Grid -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_container"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Row 1: Large image + 2 small -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_margin="1dp"
+                        android:src="@drawable/image_1"
+                        android:scaleType="centerCrop"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_margin="1dp"
+                        android:src="@drawable/image_2"
+                        android:scaleType="centerCrop"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="262dp"
+                    android:layout_weight="2"
+                    android:layout_margin="1dp"
+                    android:src="@drawable/image_3"
+                    android:scaleType="centerCrop"/>
+            </LinearLayout>
+
+            <!-- Row 2: Regular 3 equal images -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:src="@drawable/image_4"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:src="@drawable/image_5"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:src="@drawable/image_6"
+                    android:scaleType="centerCrop"/>
+            </LinearLayout>
+
+            <!-- Row 2: Regular 3 equal images -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:src="@drawable/image_7"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:src="@drawable/image_8"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:src="@drawable/image_9"
+                    android:scaleType="centerCrop"/>
+            </LinearLayout>
+
+            <!-- Row 3: 2 small + Large image -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="262dp"
+                    android:layout_weight="2"
+                    android:layout_margin="1dp"
+                    android:src="@drawable/image_10"
+                    android:scaleType="centerCrop"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_margin="1dp"
+                        android:src="@drawable/image_11"
+                        android:scaleType="centerCrop"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_margin="1dp"
+                        android:src="@drawable/image_12"
+                        android:scaleType="centerCrop"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Row 4: Regular 3 equal images -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:src="@drawable/image_1"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:src="@drawable/image_2"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:src="@drawable/image_3"
+                    android:scaleType="centerCrop"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>
