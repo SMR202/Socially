@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:id="@+id/camerabtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/camera"
+            android:contentDescription="@string/camera_cd"
+            android:padding="4dp"
+            android:layout_gravity="start"
+            app:tint="@color/orange_app"
+            />
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:src="@drawable/socially_logo"
+            android:contentDescription="@string/app_name"
+            android:padding="4dp"
+            android:layout_gravity="center"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/igtvbtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/igtv"
+            android:contentDescription="@string/igtv_cd"
+            android:padding="4dp"
+            android:layout_gravity="end"
+            app:tint="@color/orange_app"/>
+
+        <ImageView
+            android:id="@+id/igdirectbtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/igdirect"
+            android:contentDescription="@string/igdirect_cd"
+            android:padding="4dp"
+            android:layout_gravity="end"
+            app:tint="@color/orange_app"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/feed_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+
+</LinearLayout>
