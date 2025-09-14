@@ -22,10 +22,11 @@
         android:layout_height="wrap_content"
         android:background="@color/white"
         app:labelVisibilityMode="unlabeled"
-        app:itemIconTint="@color/bottom_nav_color"
-        app:itemRippleColor="@color/white"
+        app:itemIconTint="@color/orange_app"
+        app:itemRippleColor="@android:color/transparent"
         app:itemActiveIndicatorStyle="@null"
         app:menu="@menu/menu"/>
+
 
 
 

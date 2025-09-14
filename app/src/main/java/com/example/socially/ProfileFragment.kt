@@ -1,5 +1,6 @@
 package com.example.socially
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
@@ -15,11 +16,15 @@ class ProfileFragment: Fragment(R.layout.fragment_profile) {
     private lateinit var postsContent : LinearLayout
     private lateinit var tagContent : LinearLayout
 
+    private lateinit var profileStory : ImageView
+    private lateinit var profileHighlight : ImageView
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         initViews(view)
         setupTabClickListeners()
+        setUpClickListeners()
     }
 
     private fun initViews(view: View) {
@@ -27,6 +32,21 @@ class ProfileFragment: Fragment(R.layout.fragment_profile) {
         tabTag = view.findViewById(R.id.tab_tag)
         postsContent = view.findViewById(R.id.posts_grid)
         tagContent = view.findViewById(R.id.tagged_grid)
+
+        profileStory = view.findViewById(R.id.profile_image)
+        profileHighlight = view.findViewById(R.id.highlight1)
+    }
+
+    private fun setUpClickListeners() {
+        profileStory.setOnClickListener {
+            val intent = Intent(requireContext(), ViewStory::class.java)
+            startActivity(intent)
+        }
+
+        profileHighlight.setOnClickListener {
+            val intent = Intent(requireContext(), ViewHighlight::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun setupTabClickListeners() {

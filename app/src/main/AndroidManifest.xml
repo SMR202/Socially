@@ -12,10 +12,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Socially">
         <activity
+            android:name=".ViewStoryOther"
+            android:exported="false" />
+        <activity
+            android:name=".ViewHighlight"
+            android:exported="false" />
+        <activity
+            android:name=".CreateStory"
+            android:exported="false" />
+        <activity
+            android:name=".ViewStory"
+            android:exported="false" />
+        <activity
             android:name=".HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
