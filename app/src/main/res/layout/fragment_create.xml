@@ -1,13 +1,238 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <!--sample page-->
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:id="@+id/topbar">
+
+        <TextView
+            android:id="@+id/cancelbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Cancel"
+            android:textColor="@color/orange_app" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recents "
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/orange_app"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/downarrow"
+                app:tint="@color/orange_app"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/orange_app" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Create Fragment"
-        android:layout_centerInParent="true"/>
+        android:id="@+id/mainpic"
+        android:layout_below="@id/topbar"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/person_17"
+            android:scaleType="centerCrop"
+            android:layout_gravity="top"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mainpic"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:src="@drawable/image_1"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:src="@drawable/image_2"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:src="@drawable/image_3"
+                    android:scaleType="centerCrop"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:src="@drawable/image_4"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:src="@drawable/image_5"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:src="@drawable/image_6"
+                    android:scaleType="centerCrop"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:src="@drawable/image_7"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:src="@drawable/image_8"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:src="@drawable/image_9"
+                    android:scaleType="centerCrop"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#F0F0F0"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Library"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/orange_app"
+            android:layout_marginLeft="20dp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photo"
+            android:textSize="20sp"
+            android:textColor="@color/orange_app"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Video"
+            android:textSize="20sp"
+            android:textColor="@color/orange_app"
+            android:layout_marginRight="20dp"
+            />
+
+
+
+
+
+    </LinearLayout>
 
 </RelativeLayout>

@@ -288,7 +288,7 @@
                     <ImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:src="@drawable/person1"
+                        android:src="@drawable/person3"
                         android:contentDescription="profile_picture_cd"
                         android:scaleType="centerCrop"/>
                     <LinearLayout
@@ -296,14 +296,27 @@
                         android:layout_height="match_parent"
                         android:orientation="vertical"
                         >
-                        <TextView
+                        <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="samsulek01"
-                            android:textColor="@color/black"
-                            android:textSize="16sp"
-                            android:layout_marginStart="8dp"
-                            android:textStyle="bold"/>
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="samsulek01"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:layout_marginStart="8dp"
+                                android:textStyle="bold"/>
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/verfiedbadgeblue"
+                                android:layout_marginTop="-2dp"
+                                />
+
+                        </LinearLayout>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"

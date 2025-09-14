@@ -2,6 +2,7 @@ package com.example.socially
 
 import android.content.Intent
 import android.os.Bundle
+import android.provider.MediaStore
 import android.view.View
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
@@ -11,6 +12,11 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     private lateinit var myStory: ImageView
     private lateinit var userTwo: ImageView
     private lateinit var cameraButton: ImageView
+    private lateinit var igDirectButton: ImageView
+
+    companion object {
+        private const val REQUEST_IMAGE_CAPTURE = 1
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -22,6 +28,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         myStory = view.findViewById(R.id.mystory)
         userTwo = view.findViewById(R.id.user2)
         cameraButton = view.findViewById(R.id.camerabtn)
+        igDirectButton = view.findViewById(R.id.igdirectbtn)
     }
 
     private fun setupClickListeners() {
@@ -39,8 +46,14 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             startActivity(intent)
         }
         cameraButton.setOnClickListener {
-            //val intent = Intent(requireContext(), CameraActivity::class.java)
-            //startActivity(intent)
+            val cameraIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+            if (cameraIntent.resolveActivity(requireActivity().packageManager) != null) {
+                startActivityForResult(cameraIntent, REQUEST_IMAGE_CAPTURE)
+            }
+        }
+        igDirectButton.setOnClickListener {
+            val intent = Intent(requireContext(), IGDirect::class.java)
+            startActivity(intent)
         }
     }
 

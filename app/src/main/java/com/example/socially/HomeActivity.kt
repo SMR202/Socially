@@ -34,6 +34,7 @@ class HomeActivity : AppCompatActivity() {
                 }
                 R.id.create -> {
                     replaceFragment(CreateFragment())
+                    bottomNav.visibility = android.view.View.GONE
                     true
                 }
                 R.id.notifications -> {
