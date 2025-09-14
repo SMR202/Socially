@@ -19,6 +19,9 @@ class ProfileFragment: Fragment(R.layout.fragment_profile) {
     private lateinit var profileStory : ImageView
     private lateinit var profileHighlight : ImageView
 
+    private lateinit var editProfile: TextView
+
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -35,6 +38,8 @@ class ProfileFragment: Fragment(R.layout.fragment_profile) {
 
         profileStory = view.findViewById(R.id.profile_image)
         profileHighlight = view.findViewById(R.id.highlight1)
+
+        editProfile = view.findViewById(R.id.edit_profile_button)
     }
 
     private fun setUpClickListeners() {
@@ -45,6 +50,10 @@ class ProfileFragment: Fragment(R.layout.fragment_profile) {
 
         profileHighlight.setOnClickListener {
             val intent = Intent(requireContext(), ViewHighlight::class.java)
+            startActivity(intent)
+        }
+        editProfile.setOnClickListener {
+            val intent = Intent(requireContext(), EditProfileScreen::class.java)
             startActivity(intent)
         }
     }

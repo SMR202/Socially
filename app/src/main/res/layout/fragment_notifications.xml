@@ -5,7 +5,6 @@
     android:orientation="vertical"
     android:background="@color/white">
 
-    <!-- Header with tabs -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,7 +13,6 @@
         android:elevation="2dp">
 
 
-        <!-- Tab Layout -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -49,7 +47,6 @@
 
         </LinearLayout>
 
-        <!-- Tab indicator line -->
         <View
             android:id="@+id/tab_indicator"
             android:layout_width="0dp"
@@ -60,7 +57,6 @@
 
     </LinearLayout>
 
-    <!-- Notifications ScrollView -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -72,7 +68,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- Following Tab Content -->
             <LinearLayout
                 android:id="@+id/following_content"
                 android:layout_width="match_parent"
@@ -80,7 +75,6 @@
                 android:orientation="vertical"
                 android:visibility="visible">
 
-                <!-- Following notification 1 -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -199,14 +193,12 @@
 
                 </LinearLayout>
 
-                <!-- Divider -->
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="0.5dp"
                     android:background="@color/light_gray"
                     android:layout_marginStart="68dp"/>
 
-                <!-- Following notification 2 -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -733,7 +725,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <Button
+                        <TextView
                             android:layout_width="80dp"
                             android:layout_height="36dp"
                             android:text="Follow"
@@ -748,7 +740,6 @@
                     </LinearLayout>
                 </LinearLayout>
 
-                <!-- Like notification -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -792,7 +783,6 @@
                         android:scaleType="centerCrop"/>
                 </LinearLayout>
 
-                <!-- Started following -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -834,7 +824,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <Button
+                        <TextView
                             android:layout_width="80dp"
                             android:layout_height="36dp"
                             android:text="Message"
@@ -847,7 +837,6 @@
                     </LinearLayout>
                 </LinearLayout>
 
-                <!-- TODAY Section -->
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -860,7 +849,6 @@
                     android:layout_marginTop="16dp"
                     android:background="@color/white"/>
 
-                <!-- Like notification -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -904,7 +892,6 @@
                         android:scaleType="centerCrop"/>
                 </LinearLayout>
 
-                <!-- Started following -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -946,7 +933,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <Button
+                        <TextView
                             android:layout_width="80dp"
                             android:layout_height="36dp"
                             android:text="Follow"
@@ -962,7 +949,6 @@
                     </LinearLayout>
                 </LinearLayout>
 
-                <!-- THIS WEEK Section -->
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -975,7 +961,6 @@
                     android:layout_marginTop="16dp"
                     android:background="@color/white"/>
 
-                <!-- Like notification -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -1019,7 +1004,6 @@
                         android:scaleType="centerCrop"/>
                 </LinearLayout>
 
-                <!-- Started following -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -1061,7 +1045,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <Button
+                        <TextView
                             android:layout_width="80dp"
                             android:layout_height="36dp"
                             android:text="Follow"
@@ -1077,7 +1061,6 @@
                     </LinearLayout>
                 </LinearLayout>
 
-                <!-- THIS MONTH Section -->
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -1090,7 +1073,6 @@
                     android:layout_marginTop="16dp"
                     android:background="@color/white"/>
 
-                <!-- Like notification -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -1134,7 +1116,6 @@
                         android:scaleType="centerCrop"/>
                 </LinearLayout>
 
-                <!-- Started following -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -1177,7 +1158,7 @@
                         android:orientation="horizontal">
 
 
-                        <Button
+                        <TextView
                             android:layout_width="80dp"
                             android:layout_height="36dp"
                             android:text="Message"

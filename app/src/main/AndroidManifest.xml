@@ -12,6 +12,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Socially">
         <activity
+            android:name=".UserProfileScreen"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfileScreen"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpScreen"
+            android:exported="false" />
+        <activity
+            android:name=".LoginScreen"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomeBackScreen"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
             android:name=".SearchScreen"
             android:exported="false" />
         <activity
@@ -36,7 +54,7 @@
             android:name=".ViewStory"
             android:exported="false" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

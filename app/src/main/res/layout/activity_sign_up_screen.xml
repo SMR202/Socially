@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange_app"
+    android:padding="24dp"
+    tools:context=".SignUpScreen">
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/backarrow"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        app:tint="@color/white"
+        android:contentDescription="Back"
+        android:layout_marginHorizontal="15dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_marginHorizontal="15dp"
+        android:layout_below="@id/backButton">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:src="@drawable/socially"
+                android:layout_marginTop="0dp"
+                android:tint="@color/white"
+                android:layout_marginBottom="20dp"
+                android:contentDescription="Socially Logo" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create An Account and Sign Up"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_marginBottom="30dp" />
+
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/circle2"
+                android:backgroundTint="@color/light_gray"
+                android:gravity="center"
+                android:layout_marginBottom="30dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/camera"
+                    app:tint="@color/orange_app"
+                    android:contentDescription="Add Photo" />
+
+            </LinearLayout>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Username"
+                android:background="@drawable/rounded_corners"
+                android:paddingHorizontal="16dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/medium_gray"
+                android:layout_marginBottom="12dp"
+                android:inputType="text"
+                android:backgroundTint="@color/orange_app"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Your Name"
+                android:background="@drawable/rounded_corners"
+                android:paddingHorizontal="16dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/medium_gray"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="@color/orange_app"
+                android:inputType="textPersonName" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Your Last Name"
+                android:background="@drawable/rounded_corners"
+                android:paddingHorizontal="16dp"
+                android:textSize="16sp"
+                android:backgroundTint="@color/orange_app"
+                android:textColor="@color/black"
+                android:textColorHint="@color/medium_gray"
+                android:layout_marginBottom="12dp"
+                android:inputType="textPersonName" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Date of Birth"
+                android:background="@drawable/rounded_corners"
+                android:paddingHorizontal="16dp"
+                android:textSize="16sp"
+                android:backgroundTint="@color/orange_app"
+                android:textColor="@color/black"
+                android:textColorHint="@color/medium_gray"
+                android:layout_marginBottom="12dp"
+                android:inputType="date" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="E-mail"
+                android:background="@drawable/rounded_corners"
+                android:paddingHorizontal="16dp"
+                android:textSize="16sp"
+                android:backgroundTint="@color/orange_app"
+                android:textColor="@color/black"
+                android:textColorHint="@color/medium_gray"
+                android:layout_marginBottom="12dp"
+                android:inputType="textEmailAddress" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Password"
+                android:background="@drawable/rounded_corners"
+                android:paddingHorizontal="16dp"
+                android:backgroundTint="@color/orange_app"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/medium_gray"
+                android:layout_marginBottom="30dp"
+                android:inputType="textPassword" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Create Account"
+                android:textColor="@color/orange_app"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="@drawable/rounded_corners"
+                android:backgroundTint="@color/white"
+                android:layout_marginBottom="40dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
