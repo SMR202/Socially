@@ -1,25 +1,23 @@
 package com.example.socially
 
-import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
-import android.widget.LinearLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class IGDirect : AppCompatActivity() {
+class DMScreen : AppCompatActivity() {
 
     private lateinit var backButton: ImageView
-    private lateinit var dmOne: LinearLayout
-
+    private lateinit var callButton: ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_igdirect)
+        setContentView(R.layout.activity_dmscreen)
 
-        setupUI()
+        initViews()
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -28,15 +26,14 @@ class IGDirect : AppCompatActivity() {
         }
     }
 
-    private fun setupUI() {
+    private fun initViews(){
         backButton = findViewById(R.id.backbutton)
-        dmOne = findViewById(R.id.dmOne)
-
+        callButton = findViewById(R.id.callButton)
         backButton.setOnClickListener {
             onBackPressedDispatcher.onBackPressed()
         }
-        dmOne.setOnClickListener {
-            val intent = Intent(this, DMScreen::class.java)
+        callButton.setOnClickListener {
+            val intent = android.content.Intent(this, CallScreen::class.java)
             startActivity(intent)
         }
     }

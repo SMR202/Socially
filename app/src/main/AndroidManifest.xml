@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Socially">
         <activity
+            android:name=".SearchScreen"
+            android:exported="false" />
+        <activity
+            android:name=".CallScreen"
+            android:exported="false" />
+        <activity
+            android:name=".DMScreen"
+            android:exported="false" />
+        <activity
             android:name=".IGDirect"
             android:exported="false" />
         <activity

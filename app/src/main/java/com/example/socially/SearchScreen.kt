@@ -1,25 +1,22 @@
 package com.example.socially
 
-import android.content.Intent
 import android.os.Bundle
-import android.widget.ImageView
-import android.widget.LinearLayout
+import android.widget.Button
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class IGDirect : AppCompatActivity() {
+class SearchScreen : AppCompatActivity() {
 
-    private lateinit var backButton: ImageView
-    private lateinit var dmOne: LinearLayout
-
+    private lateinit var clearButton: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_igdirect)
+        setContentView(R.layout.activity_search_screen)
 
-        setupUI()
+        onStart()
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -28,16 +25,11 @@ class IGDirect : AppCompatActivity() {
         }
     }
 
-    private fun setupUI() {
-        backButton = findViewById(R.id.backbutton)
-        dmOne = findViewById(R.id.dmOne)
-
-        backButton.setOnClickListener {
-            onBackPressedDispatcher.onBackPressed()
-        }
-        dmOne.setOnClickListener {
-            val intent = Intent(this, DMScreen::class.java)
-            startActivity(intent)
+    override fun onStart() {
+        super.onStart()
+        clearButton = findViewById(R.id.clearbtn)
+        clearButton.setOnClickListener {
+            finish()
         }
     }
 }

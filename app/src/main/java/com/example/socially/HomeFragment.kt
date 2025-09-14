@@ -13,6 +13,8 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     private lateinit var userTwo: ImageView
     private lateinit var cameraButton: ImageView
     private lateinit var igDirectButton: ImageView
+    private lateinit var likeButton: ImageView
+    private lateinit var likeButton2: ImageView
 
     companion object {
         private const val REQUEST_IMAGE_CAPTURE = 1
@@ -29,6 +31,8 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         userTwo = view.findViewById(R.id.user2)
         cameraButton = view.findViewById(R.id.camerabtn)
         igDirectButton = view.findViewById(R.id.igdirectbtn)
+        likeButton = view.findViewById(R.id.like_button)
+        likeButton2 = view.findViewById(R.id.like_button2)
     }
 
     private fun setupClickListeners() {
@@ -54,6 +58,12 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         igDirectButton.setOnClickListener {
             val intent = Intent(requireContext(), IGDirect::class.java)
             startActivity(intent)
+        }
+        likeButton.setOnClickListener {
+            likeButton.isSelected = !likeButton.isSelected
+        }
+        likeButton2.setOnClickListener {
+            likeButton2.isSelected = !likeButton2.isSelected
         }
     }
 

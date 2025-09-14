@@ -392,7 +392,7 @@
                         android:id="@+id/like_button2"
                         android:layout_width="32dp"
                         android:layout_height="32dp"
-                        android:src="@drawable/like"
+                        android:src="@drawable/like_button_selector"
                         android:contentDescription="like_button_cd"
                         app:tint="@color/black"/>
 
@@ -620,7 +620,7 @@
                         android:id="@+id/like_button"
                         android:layout_width="32dp"
                         android:layout_height="32dp"
-                        android:src="@drawable/like"
+                        android:src="@drawable/like_button_selector"
                         android:contentDescription="like_button_cd"
                         app:tint="@color/black"/>
 
