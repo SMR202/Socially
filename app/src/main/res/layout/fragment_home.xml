@@ -272,7 +272,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="8dp"
+                android:padding="0dp"
                 android:background="@color/white"
                 android:layout_marginBottom="8dp">
 
@@ -280,7 +280,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:gravity="center_vertical">
+                    android:gravity="center_vertical"
+                    android:padding="8dp">
 
                     <ImageView
                         android:layout_width="40dp"
@@ -328,7 +329,9 @@
                 <HorizontalScrollView
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
-                    android:scrollbars="none">
+                    android:scrollbars="none"
+
+                    >
 
                     <LinearLayout
                         android:orientation="horizontal"
@@ -336,10 +339,11 @@
                         android:layout_height="match_parent"
                         >
 
+
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/image_12"
+                            android:src="@drawable/img1"
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
                             android:layout_marginRight="8dp"
@@ -348,7 +352,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/image_13"
+                            android:src="@drawable/img2"
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
                             android:layout_marginRight="8dp"/>
@@ -356,7 +360,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/image_14"
+                            android:src="@drawable/img3"
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"/>
                     </LinearLayout>
@@ -367,7 +371,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:gravity="center_vertical"
-                    android:layout_marginTop="8dp">
+                    android:padding="8dp">
 
                     <ImageView
                         android:id="@+id/like_button2"
@@ -433,7 +437,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:gravity="center_vertical"
-                    android:layout_marginTop="8dp">
+                    android:paddingHorizontal="8dp">
 
                     <ImageView
                         android:layout_width="20dp"
@@ -455,7 +459,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginTop="4dp">
+                    android:layout_marginTop="4dp"
+                    android:paddingHorizontal="8dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -480,9 +485,11 @@
                     android:text="View all 23 comments"
                     android:textColor="@color/medium_gray"
                     android:textSize="13sp"
-                    android:layout_marginTop="4dp"/>
+                    android:layout_marginTop="4dp"
+                    android:paddingHorizontal="8dp"/>
 
                 <TextView
+                    android:paddingHorizontal="8dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="2 hours ago"
@@ -496,7 +503,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="8dp"
+                android:padding="0dp"
                 android:background="@color/white"
                 android:layout_marginBottom="8dp">
 
@@ -504,7 +511,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:gravity="center_vertical">
+                    android:gravity="center_vertical"
+                    android:padding="8dp">
 
                     <ImageView
                         android:layout_width="40dp"
@@ -520,7 +528,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="samsulek01"
+                            android:text="harrymaguire97"
                             android:textColor="@color/black"
                             android:textSize="16sp"
                             android:layout_marginStart="8dp"
@@ -528,7 +536,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Lahore, Pakistan"
+                            android:text="Karachi, Pakistan"
                             android:textColor="@color/black"
                             android:textSize="13sp"
                             android:layout_marginStart="8dp"
@@ -563,7 +571,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/image_15"
+                            android:src="@drawable/img3"
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
                             android:layout_marginRight="8dp"
@@ -572,7 +580,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/image_16"
+                            android:src="@drawable/img2"
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
                             android:layout_marginRight="8dp"/>
@@ -580,7 +588,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/image_17"
+                            android:src="@drawable/img1"
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"/>
                     </LinearLayout>
@@ -591,7 +599,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:gravity="center_vertical"
-                    android:layout_marginTop="8dp">
+                    android:padding="8dp">
 
                     <ImageView
                         android:id="@+id/like_button"
@@ -657,7 +665,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:gravity="center_vertical"
-                    android:layout_marginTop="8dp">
+                    android:paddingHorizontal="8dp">
 
                     <ImageView
                         android:layout_width="20dp"
@@ -679,7 +687,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginTop="4dp">
+                    android:layout_marginTop="4dp"
+                    android:paddingHorizontal="8dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -704,7 +713,8 @@
                     android:text="View all 23 comments"
                     android:textColor="@color/medium_gray"
                     android:textSize="13sp"
-                    android:layout_marginTop="4dp"/>
+                    android:layout_marginTop="4dp"
+                    android:paddingHorizontal="8dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -712,7 +722,8 @@
                     android:text="2 hours ago"
                     android:textColor="@color/medium_gray"
                     android:textSize="12sp"
-                    android:layout_marginTop="2dp"/>
+                    android:layout_marginTop="2dp"
+                    android:paddingHorizontal="8dp"/>
 
             </LinearLayout>
         </LinearLayout>

@@ -12,5 +12,6 @@
     <color name="blue">#FF0000FF</color>
     <color name="yellow">#FFFFFF00</color>
     <color name="transparent">#00000000</color>
+    <color name="verified_blue">#0098FD</color>
 
 </resources>
